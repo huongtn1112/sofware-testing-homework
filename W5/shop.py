@@ -1,8 +1,9 @@
+#chuong trinh chua sua loi
 def get_product_reviews(price, ratio):
     # 1: nhu cầu thấp, 2: nhu cầu trung bình, 3: nhu cầu cao
     s = ""
     try:
-        if ratio < 0 or ratio > 100 or price < 0 or price > 1000:
+        if ratio < 0 or ratio > 100 or price > 1000:
             return "Invalid in"
         else:
             if 50 <= price <= 1000:
